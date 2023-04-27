@@ -86,7 +86,7 @@ var server = http.createServer(function (req, res) {
 // initialize database and start the server
 db.on('open', function () {
     db.run("CREATE TABLE notes (text TEXT)", function (err) {
-        console.log('Server running at http://127.0.0.1:8080/');
-        server.listen(8080);
+        console.log('Server running at http://127.0.0.1:80/');
+        server.listen(80);
     });
 });
